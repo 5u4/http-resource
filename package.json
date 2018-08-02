@@ -1,0 +1,22 @@
+{
+  "name": "http-resource",
+  "version": "0.0.0",
+  "description": "📦 Http resource transformer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senhungwong/http-resource.git"
+  },
+  "keywords": [
+    "http-resource", "model", "transformer", "resource"
+  ],
+  "author": "Senhung Wong <0x53656e@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senhungwong/http-resource/issues"
+  },
+  "homepage": "https://github.com/senhungwong/http-resource#readme"
+}

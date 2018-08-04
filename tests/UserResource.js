@@ -1,4 +1,4 @@
-const { Resource, toResource } = require('../src');
+const { Resource, ResourceCollection } = require('../src');
 
 /**
  * An example user resource class for testing
@@ -13,4 +13,7 @@ class UserResource extends Resource
     }
 }
 
-module.exports = toResource(UserResource);
+module.exports = {
+    make:       (resource)  => new UserResource(resource),
+    collection: (resources) => new ResourceCollection(resources, UserResource),
+};

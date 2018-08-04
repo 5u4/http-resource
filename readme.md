@@ -15,7 +15,7 @@ $ npm install @senhung/http-resource
 ### Example resource definition
 
 ```js
-const { Resource, toResource } = require('@senhung/http-resource');
+const { Resource, ResourceCollection } = require('@senhung/http-resource');
 
 /**
  * An example user resource class for testing
@@ -30,7 +30,10 @@ class UserResource extends Resource
     }
 }
 
-module.exports = toResource(UserResource);
+module.exports = {
+    make:       (resource)  => new UserResource(resource),
+    collection: (resources) => new ResourceCollection(resources, UserResource),
+};
 ```
 
 ### Example usage

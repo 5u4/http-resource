@@ -3,12 +3,11 @@
  * 
  * @param {String} resourceClass The resource class
  * 
- * @returns {Object} A make function for creating a resource and a collection
- *                   for creating a set of resources
+ * @returns {{make: Function, collection: Function}}
  */
 const toResource = (resourceClass) => {
     return {
-        make: (resource) => new resourceClass(resource),
+        make:       (resource)  => new resourceClass(resource),
         collection: (resources) => new ResourceCollection(resources, resourceClass),
     }
 };

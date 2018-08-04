@@ -1,5 +1,9 @@
 # Http Resource
 
+![Travis (.org)](https://img.shields.io/travis/senhungwong/http-resource.svg?style=flat-square)
+[![GitHub](https://img.shields.io/github/license/senhungwong/http-resource.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/@senhung/http-resource.svg?style=flat-square)](https://www.npmjs.com/package/@senhung/http-resource)
+
 ## Description
 
 Transform http resources to a JSON response.
